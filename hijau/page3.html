@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Happy Birthday Abel</title>
+  <link rel="stylesheet" href="page3.css">
+</head>
+<body>
+  <audio id="bgm" src="audio/lagu.mp3" loop preload="auto"></audio>
+
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="bar" id="bar"></div>
+
+  <button class="music" id="music" aria-label="Nyalakan atau matikan musik">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+      <path d="M9 17.5V6.2l10-2v11.3a3 3 0 1 1-2-2.8V7.6l-6 1.2v8.7a3 3 0 1 1-2-2.8z" transform="translate(-1 1)"/>
+    </svg>
+  </button>
+  <div class="music-hint" id="musicHint">Ketuk layar buat nyalain musik 🎵</div>
+
+  <main>
+    <!-- 1. HERO -->
+    <section class="sec hero">
+      <p class="eyebrow in-load" style="--d:.2s">untuk seseorang yang spesial</p>
+      <h1>
+        <span class="l1 in-load" style="--d:.5s">Happy</span>
+        <em class="l2 in-load" style="--d:.9s">Birthday</em>
+        <span class="l3 in-load" style="--d:1.3s">Abel</span>
+      </h1>
+      <div class="divider in-load" style="--d:1.7s"></div>
+      <p class="sweet in-load" style="--d:2s">Sweet Seventeen</p>
+      <p class="date in-load" style="--d:2.2s">10 November</p>
+      <div class="cue in-load" style="--d:2.8s"><span>geser ke bawah</span><i></i></div>
+    </section>
+
+    <!-- 2. BUKET -->
+    <section class="sec bouquet">
+      <p class="eyebrow rv">hadiah pertama</p>
+      <h2 class="rv">Buket Digital</h2>
+      <p class="sub rv">Pencet bunganya satu-satu, tiap bunga punya pesan kecil buat kamu</p>
+      <div class="bq-wrap rv">
+        <svg id="bq" class="bq" viewBox="0 0 300 360" aria-label="Buket bunga"></svg>
+      </div>
+      <div class="petal-card" id="petalCard">
+        <small id="pcName">✦</small>
+        <p id="pcMsg">Mulai dari bunga yang paling kamu suka ya…</p>
+      </div>
+      <p class="count" id="pcCount">0 dari 5 bunga dibuka</p>
+    </section>
+
+    <!-- 3. SURAT -->
+    <section class="sec letter">
+      <p class="eyebrow rv">dari hati</p>
+      <h2 class="rv">Sebuah Surat</h2>
+      <article class="paper rv">
+        <div class="paper-top"><span>untuk Abel</span><span>10 November</span></div>
+        <p class="rv lead">hehee happy sweet seventeen yaa bell🤍🎂, ehh bener kan kamu ulang tahun ke 17-kan yaa...? sori kalau salah..</p>
+        <p class="rv">kesampingkan itu semoga diumur kamu yang sekarang kamu selalu dikelilingi hal-hal baikk, dipermudah segala urusannyaaa, dilancarkan rezekinyaa, dan semua doa yang kamu langitkan satu per satu bisa terwujud.</p>
+        <p class="rv">semoga kamu selalu sehat, bahagia, panjang umur, makinn cantikk dan tetap jadi orang baik yang ku kenal.</p>
+        <p class="rv">dan walaupun di hari hari sebelumnya kamu telah kehilangan seseorang yang kamu sayangg aku harap di umur 17 tahun ini kamu lebih banyak ketemu bahagianya daripada sedihnya, lebih banyak senyumnya daripada nangisnya, dan selalu punya alasan buat bersyukurr setiap harinyaa.</p>
+        <p class="rv">oiyaa semoga kamu suka sama hadiahhnyaa walaupun paper bag nya kegedean😭😭, terus untuk yg bunga semoga kamu sukaa walaupun kecil(aga berantakan yaa hehe soalnya aku buat sendiri) dan hiraukan saja box mika nya, soalnya gagall huhuu, teruss juga jangan lupa kalau lagi belajarr juga mainin coconut oilnyaa biar ga stress, terus untuk keychain terserah kamu mau dipasang atau ga (semoga dipasang🤭).</p>
+        <p class="rv">teruss teks ini tuh ga bermaksud untuk nembak/confes/lain-lain, aku cuma pengen ngucapin ulang tahun dari hati terdalam akuu, maaf juga kalau emang aku buat risihh, salah satunya mungkin sering ngecek in kamu terus(cuma buat liat hadiah yg cocok ko ✌🏻✌🏻✌🏻) semogaa kamu ga risihh yakk chat an sma akuu...</p>
+        <p class="rv">sekali lagi, happy sweet seventeenn yaaa, semoga dunia selalu punya banyak cara buat bikin kamu bahagiaa. enjoy your special dayy, you deserve all the happiness in this world. i hope your 17th year will be full of love, laughter, and beautiful memories. 🤍🫶🏻🎉</p>
+      </article>
+    </section>
+
+    <!-- 4. TOPLES -->
+    <section class="sec jar">
+      <p class="eyebrow rv">dari aku, buat kamu</p>
+      <h2 class="rv">Sesuatu yang Aku<br>Pengen Bilang ke Kamu</h2>
+      <p class="sub rv">Kocok toplesnya, terus ambil satu kertas</p>
+
+      <svg id="jar" class="jar-svg rv" viewBox="0 0 200 270" aria-label="Toples kertas">
+        <rect x="68" y="22" width="64" height="20" rx="7" fill="#4fb896"/>
+        <rect x="48" y="40" width="104" height="26" rx="7" fill="#7fd6b5"/>
+        <path d="M44 68 L156 68 C168 112 172 204 160 242 C157 256 146 262 132 262 L68 262 C54 262 43 256 40 242 C28 204 32 112 44 68Z"
+              fill="rgba(255,255,255,.45)" stroke="rgba(45,106,94,.45)" stroke-width="1.6"/>
+        <g fill="rgba(255,253,243,.97)" stroke="rgba(79,184,150,.4)" stroke-width="1">
+          <rect x="58"  y="158" width="40" height="25" rx="3" transform="rotate(-12 78 170)"/>
+          <rect x="104" y="134" width="38" height="25" rx="3" transform="rotate(9 123 146)"/>
+          <rect x="74"  y="206" width="42" height="24" rx="3" transform="rotate(5 95 218)"/>
+          <rect x="116" y="198" width="36" height="23" rx="3" transform="rotate(-16 134 210)"/>
+          <rect x="66"  y="112" width="36" height="23" rx="3" transform="rotate(11 84 124)"/>
+          <rect x="102" y="228" width="40" height="22" rx="3" transform="rotate(-5 122 238)"/>
+        </g>
+        <path d="M54 86 C50 140 52 200 58 240" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+
+      <button class="btn rv" id="shake">Kocok toplesnya</button>
+      <p class="count" id="jarCount"></p>
+
+      <div class="note" id="note"><p id="noteText"></p><span class="heart">♡</span></div>
+    </section>
+
+    <!-- 5. GERBANG NOTIF -->
+    <section class="sec gate" id="gate">
+      <div class="gate-glow"></div>
+      <p class="gate-text rv">Eh, tunggu…<br><em>ada satu lagi</em></p>
+    </section>
+
+    <!-- 6. PENUTUP -->
+    <section class="sec closing" id="closing">
+      <p class="eyebrow cl" style="--d:.2s">With All My Heart</p>
+      <h2 class="big cl" style="--d:.6s">Happy Birthday,<br><em>Abel</em></h2>
+      <div class="divider cl" style="--d:1s"></div>
+      <p class="end-text cl" style="--d:1.3s">I Hope This 17th Year Is The Best One Yet For You. Thank You For Being You, and Thank You For Reading This Far.</p>
+      <p class="sign cl" style="--d:1.8s">— See You!</p>
+      <button class="btn ghost cl" id="again" style="--d:2.3s">Baca dari awal</button>
+    </section>
+  </main>
+
+  <!-- NOTIF -->
+  <div class="notif-wrap" id="notif" aria-hidden="true">
+    <div class="notif" role="dialog" aria-label="Notifikasi ulang tahun">
+      <div class="notif-head"><span>Ulang Tahun</span><small>sekarang</small></div>
+      <div class="notif-body">
+        <div class="notif-ico">🎂</div>
+        <div class="notif-txt">
+          <h3>Happy Birthday!</h3>
+          <p>The most special Abel <span id="notifFlower"></span></p>
+        </div>
+      </div>
+      <button class="notif-close" id="notifClose">Tutup</button>
+    </div>
+  </div>
+
+  <script src="page3.js"></script>
+</body>
+</html>
